@@ -17,6 +17,10 @@ class State:
     def isInital(self):
         return self.__isInitial
     
+    @property
+    def name(self):
+        return self.__state
+    
     def getTransition(self, letter) -> Transition:
         for t in self.__transitions:
             if t.letter == letter:

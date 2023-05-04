@@ -20,7 +20,7 @@ class Machine(object):
         if not transition:
             return state.isAcception, word
         
-        print(transition, word.getWordWithPosition(position))
+        print(f"({state.name}, {word.getWordWithPosition(position)}) = {transition}")
         nextState, word, position = transition.apply(word, position)
 
         return self.__iterate(self.__states[nextState], word, position, iterations + 1)

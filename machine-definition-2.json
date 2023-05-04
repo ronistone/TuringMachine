@@ -27,11 +27,6 @@
         },
         {
             "name": "q5",
-            "isAcception": false,
-            "isInitial": false
-        },
-        {
-            "name": "q6",
             "isAcception": true,
             "isInitial": false
         }
@@ -39,8 +34,10 @@
     "letters": [
         "a",
         "b",
-        "N",
-        "R",
+        "c",
+        "X",
+        "Y",
+        "Z",
         "#"
     ],
     "transitions": [
@@ -48,28 +45,21 @@
             "state": "q0",
             "nextState": "q1",
             "letter": "a",
-            "result": "N",
+            "result": "X",
             "move": "R"
         },
         {
             "state": "q0",
             "nextState": "q4",
-            "letter": "b",
-            "result": "N",
+            "letter": "X",
+            "result": "X",
             "move": "R"
         },
         {
             "state": "q0",
-            "nextState": "q6",
-            "letter": "R",
-            "result": "R",
-            "move": "R"
-        },
-        {
-            "state": "q0",
-            "nextState": "q6",
-            "letter": "#",
-            "result": "#",
+            "nextState": "q4",
+            "letter": "Y",
+            "result": "Y",
             "move": "R"
         },
         {
@@ -82,36 +72,43 @@
         {
             "state": "q1",
             "nextState": "q1",
-            "letter": "b",
-            "result": "b",
+            "letter": "Y",
+            "result": "Y",
             "move": "R"
         },
         {
             "state": "q1",
             "nextState": "q2",
-            "letter": "R",
-            "result": "R",
-            "move": "L"
+            "letter": "b",
+            "result": "Y",
+            "move": "R"
         },
         {
-            "state": "q1",
+            "state": "q2",
             "nextState": "q2",
-            "letter": "#",
-            "result": "#",
-            "move": "L"
+            "letter": "b",
+            "result": "b",
+            "move": "R"
+        },
+        {
+            "state": "q2",
+            "nextState": "q2",
+            "letter": "Z",
+            "result": "Z",
+            "move": "R"
         },
         {
             "state": "q2",
             "nextState": "q3",
-            "letter": "a",
-            "result": "R",
+            "letter": "c",
+            "result": "Z",
             "move": "L"
         },
         {
             "state": "q3",
             "nextState": "q3",
-            "letter": "a",
-            "result": "a",
+            "letter": "Y",
+            "result": "Y",
             "move": "L"
         },
         {
@@ -119,49 +116,56 @@
             "nextState": "q3",
             "letter": "b",
             "result": "b",
+            "move": "L"
+        },
+        {
+            "state": "q3",
+            "nextState": "q3",
+            "letter": "Z",
+            "result": "Z",
+            "move": "L"
+        },
+        {
+            "state": "q3",
+            "nextState": "q3",
+            "letter": "a",
+            "result": "a",
             "move": "L"
         },
         {
             "state": "q3",
             "nextState": "q0",
-            "letter": "N",
-            "result": "N",
+            "letter": "X",
+            "result": "X",
             "move": "R"
         },
         {
             "state": "q4",
             "nextState": "q4",
-            "letter": "a",
-            "result": "a",
+            "letter": "X",
+            "result": "X",
             "move": "R"
         },
         {
             "state": "q4",
             "nextState": "q4",
-            "letter": "b",
-            "result": "b",
+            "letter": "Y",
+            "result": "Y",
             "move": "R"
         },
         {
             "state": "q4",
-            "nextState": "q5",
-            "letter": "R",
-            "result": "R",
-            "move": "L"
+            "nextState": "q4",
+            "letter": "Z",
+            "result": "Z",
+            "move": "R"
         },
         {
             "state": "q4",
             "nextState": "q5",
             "letter": "#",
             "result": "#",
-            "move": "L"
-        },
-        {
-            "state": "q5",
-            "nextState": "q3",
-            "letter": "b",
-            "result": "R",
-            "move": "L"
+            "move": "R"
         }
     ]
 }

@@ -27,11 +27,6 @@
         },
         {
             "name": "q5",
-            "isAcception": false,
-            "isInitial": false
-        },
-        {
-            "name": "q6",
             "isAcception": true,
             "isInitial": false
         }
@@ -39,8 +34,8 @@
     "letters": [
         "a",
         "b",
-        "N",
-        "R",
+        "X",
+        "Y",
         "#"
     ],
     "transitions": [
@@ -48,28 +43,14 @@
             "state": "q0",
             "nextState": "q1",
             "letter": "a",
-            "result": "N",
+            "result": "X",
             "move": "R"
         },
         {
             "state": "q0",
-            "nextState": "q4",
-            "letter": "b",
-            "result": "N",
-            "move": "R"
-        },
-        {
-            "state": "q0",
-            "nextState": "q6",
-            "letter": "R",
-            "result": "R",
-            "move": "R"
-        },
-        {
-            "state": "q0",
-            "nextState": "q6",
-            "letter": "#",
-            "result": "#",
+            "nextState": "q3",
+            "letter": "Y",
+            "result": "Y",
             "move": "R"
         },
         {
@@ -82,86 +63,65 @@
         {
             "state": "q1",
             "nextState": "q1",
-            "letter": "b",
-            "result": "b",
+            "letter": "Y",
+            "result": "Y",
             "move": "R"
         },
         {
             "state": "q1",
             "nextState": "q2",
-            "letter": "R",
-            "result": "R",
-            "move": "L"
-        },
-        {
-            "state": "q1",
-            "nextState": "q2",
-            "letter": "#",
-            "result": "#",
+            "letter": "b",
+            "result": "Y",
             "move": "L"
         },
         {
             "state": "q2",
-            "nextState": "q3",
-            "letter": "a",
-            "result": "R",
-            "move": "L"
-        },
-        {
-            "state": "q3",
-            "nextState": "q3",
+            "nextState": "q2",
             "letter": "a",
             "result": "a",
             "move": "L"
         },
         {
-            "state": "q3",
-            "nextState": "q3",
-            "letter": "b",
-            "result": "b",
+            "state": "q2",
+            "nextState": "q2",
+            "letter": "Y",
+            "result": "Y",
             "move": "L"
         },
         {
-            "state": "q3",
+            "state": "q2",
             "nextState": "q0",
-            "letter": "N",
-            "result": "N",
+            "letter": "X",
+            "result": "X",
             "move": "R"
         },
         {
-            "state": "q4",
+            "state": "q3",
+            "nextState": "q3",
+            "letter": "Y",
+            "result": "Y",
+            "move": "R"
+        },
+        {
+            "state": "q3",
             "nextState": "q4",
-            "letter": "a",
-            "result": "a",
+            "letter": "b",
+            "result": "Y",
             "move": "R"
         },
         {
             "state": "q4",
             "nextState": "q4",
             "letter": "b",
-            "result": "b",
+            "result": "Y",
             "move": "R"
-        },
-        {
-            "state": "q4",
-            "nextState": "q5",
-            "letter": "R",
-            "result": "R",
-            "move": "L"
         },
         {
             "state": "q4",
             "nextState": "q5",
             "letter": "#",
             "result": "#",
-            "move": "L"
-        },
-        {
-            "state": "q5",
-            "nextState": "q3",
-            "letter": "b",
-            "result": "R",
-            "move": "L"
+            "move": "R"
         }
     ]
 }
