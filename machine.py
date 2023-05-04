@@ -18,6 +18,7 @@ class Machine(object):
             return False, word
         transition = state.getTransition(word.get(position))
         if not transition:
+            print(f"({state.name}, {word.getWordWithPosition(position)})")
             return state.isAcception, word
         
         print(f"({state.name}, {word.getWordWithPosition(position)}) = {transition}")
